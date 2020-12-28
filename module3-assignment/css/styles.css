@@ -1,0 +1,143 @@
+body {
+  font-size: 16px;
+  color: solid black;
+ 
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: grey;
+  border-radius: 0;
+  border: 2px solid black;
+  height: auto;
+ }
+
+
+.navbar-brand {
+  padding-top: auto;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: black;
+  font-size: 1.7em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: .75;
+}
+
+#nav-list {
+  margin-top: 0;
+}
+#nav-list a {
+  color: black;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid black;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: 18px;
+  clear: right;
+}
+/* END HEADER */
+
+h1 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+section {
+  padding-right: 10px;
+  padding-left: 10px;
+  width: 100%;
+}
+#Chicken-tile, #Sushi-tile, #Beef-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+#Chicken-tile:hover, #Sushi-tile:hover, #Beef-tile:hover {
+  box-shadow: 0 1px 5px 1px grey;
+}
+
+#Chicken-tile span, #Sushi-tile span, #Beef-tile span {
+  position: relative;
+  top: 0;
+  padding: 10px auto 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8em;
+  text-transform: uppercase;
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+ 
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.4em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+ 
+  /* Home Page */
+   }
+  #Chicken-tile, #Sushi-tile, #Beef-tile {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto 15px;
+    text-align: center;
+    color: black;
+    background-color: grey;
+  }
+
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 7vw;
+  } 
+  /* Home page */
+  #Chicken-tile, #Sushi-tile, #Beef-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
